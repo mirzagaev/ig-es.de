@@ -1,0 +1,360 @@
+<!doctype html>
+<html class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Projekt Neues Zuhause - Fatih Moschee Esslingen</title>
+</head>
+
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav hidden class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="shrink-0 flex items-center gap-3">
+                    <div class="h-12 w-auto">
+                        <svg viewBox="0 0 200 60" class="h-full w-auto">
+                            <path d="M20 10 C 5 10, 5 50, 20 50 L 50 50 C 65 50, 65 10, 50 10 Z" fill="#0E8D39" opacity="0.2"/>
+                            <text x="65" y="32" font-family="Forum" font-size="20" fill="#222222">Fatih Moschee</text>
+                            <text x="65" y="48" font-family="Inter" font-size="10" fill="#666">Islamische Gemeinschaft Esslingen</text>
+                            <path d="M30 15 L 40 15 L 35 10 Z" fill="#0E8D39"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-text hover:text-primary transition-colors">Über uns</a>
+                    <a href="#projekt" class="text-text hover:text-primary transition-colors">Das Projekt</a>
+                    <a href="#instagram" class="text-text hover:text-primary transition-colors">Aktuelles</a>
+                    <a href="#spenden" class="text-text hover:text-primary transition-colors font-semibold">Jetzt Spenden</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative hero-gradient h-[80vh] flex items-center text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 bg-primary backdrop-blur-md border border-primary/30 px-4 py-1.5 rounded-full mb-6 animate-pulse">
+                <span class="w-2 h-2 bg-primary rounded-full"></span>
+                <span class="text-sm font-semibold uppercase tracking-wider">Projekt-Update: Grundstück erworben</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-forum mb-6 animate-fade-in font-medium">
+                Ein Fundament für die <br><span class="text-primary italic">Zukunft bauen.</span>
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mb-10  leading-relaxed">
+                Wir haben ein neues Grundstück für unsere Gemeinschaft erworben. Helfen Sie uns, diesen Ort der Begegnung, Bildung und des Gebets zu renovieren und zu verwirklichen.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#spenden" class="bg-primary hover:bg-green-700 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all transform hover:scale-105 shadow-xl">
+                    Sadaqa Jariya geben
+                </a>
+                <a href="#projekt" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-10 py-4 rounded-full font-semibold text-lg transition-all">
+                    Mehr erfahren
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Status Section (Spendenstand) -->
+    <section class="py-26 -mt-12 relative z-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-50">
+                <div class="flex justify-between items-end mb-4">
+                    <div>
+                        <p class="text-gray-500 uppercase tracking-widest text-sm mb-1">Aktueller Spendenstand</p>
+                        <h2 class="text-4xl font-forum text-primary">342.500 € <span class="text-gray-300 text-2xl">/ 850.000 €</span></h2>
+                    </div>
+                    <div class="text-right hidden sm:block">
+                        <span class="text-primary font-semibold text-xl">40% erreicht</span>
+                    </div>
+                </div>
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-100 rounded-full h-4 mb-6 overflow-hidden">
+                    <div class="bg-primary h-full rounded-full transition-all duration-1000 ease-out" style="width: 40%"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-gray-100 pt-8">
+                    <div>
+                        <p class="text-2xl font-forum text-text">1.240</p>
+                        <p class="text-xs text-gray-500 uppercase">Unterstützer</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-forum text-text">150.000 €</p>
+                        <p class="text-xs text-gray-500 uppercase">Grundstück gesichert</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-forum text-text">Renovierung</p>
+                        <p class="text-xs text-gray-500 uppercase">Nächster Meilenstein</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-forum text-text">InshaAllah</p>
+                        <p class="text-xs text-gray-500 uppercase">Ziel 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section id="projekt" class="py-24 pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&q=80&w=1200" alt="Moschee Projekt" class="w-full">
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 bg-primary text-white p-8 rounded-2xl shadow-xl hidden lg:block">
+                        <p class="text-3xl font-forum">Seit 1978</p>
+                        <p class="text-sm opacity-80 uppercase tracking-tighter">Ihre Gemeinschaft in Esslingen</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-forum mb-8 text-secondary">Warum ein neues Grundstück?</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Die Fatih Moschee in Esslingen ist über die Jahrzehnte zu einem zentralen Ankerpunkt für Muslime und die Stadtgesellschaft gewachsen. Unsere aktuellen Räumlichkeiten reichen nicht mehr aus, um den wachsenden Bedarf an Bildung, Jugendarbeit und sozialem Austausch zu decken.
+                    </p>
+                    <ul class="space-y-4 mb-10 text-text">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl mt-1">✓</span>
+                            <span>Barrierefreie Zugänge für Senioren und Inklusion.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl mt-1">✓</span>
+                            <span>Eigene Bildungsräume für Kinder und Jugendliche.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl mt-1">✓</span>
+                            <span>Ein modernes Gemeindezentrum für interkulturellen Dialog.</span>
+                        </li>
+                    </ul>
+                    <div class="bg-white p-6 rounded-2xl border-l-4 border-primary shadow-sm italic text-gray-600">
+                        "Wer eine Moschee baut, um Allahs Wohlgefallen zu erlangen, dem baut Allah ein Haus im Paradies." (Prophet Muhammad ﷺ)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Blocks -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-forum mb-4">Ihre Spende bewirkt viel</h2>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow bg-light">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-3xl mb-6 mx-auto md:mx-0">🕌</div>
+                <h3 class="text-2xl font-forum mb-4">Gebet & Spiritualität</h3>
+                <p class="text-gray-600">Schaffung von würdevollen Räumlichkeiten für das tägliche Gebet und besondere Anlässe.</p>
+            </div>
+            <div class="p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow bg-light">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-3xl mb-6 mx-auto md:mx-0">📖</div>
+                <h3 class="text-2xl font-forum mb-4">Bildung & Wissen</h3>
+                <p class="text-gray-600">Moderne Klassenzimmer für Religionsunterricht, Hausaufgabenhilfe und Kurse für alle Altersgruppen.</p>
+            </div>
+            <div class="p-8 rounded-3xl border border-gray-100 hover:shadow-xl transition-shadow bg-light">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-3xl mb-6 mx-auto md:mx-0">🤝</div>
+                <h3 class="text-2xl font-forum mb-4">Gemeinschaft & Jugend</h3>
+                <p class="text-gray-600">Ein sicherer Hafen für unsere Jugend und ein Treffpunkt für den sozialen Zusammenhalt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spenden Section -->
+    <section id="spenden" class="py-24 bg-secondary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <circle cx="50" cy="50" r="2" fill="white" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-5xl font-forum mb-8">Unterstützen Sie uns</h2>
+                    <p class="text-xl opacity-80 mb-10 leading-relaxed">
+                        Jeder Euro bringt uns dem Ziel näher, ein festes Zuhause für die kommenden Generationen in Esslingen zu sichern. Ihre Spende ist eine Investition in die Ewigkeit.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold">IBAN</div>
+                            <div>
+                                <p class="text-xs uppercase opacity-50">Überweisung an Fatih Moschee e.V.</p>
+                                <p class="text-lg font-mono">DE 12 3456 7890 0000 0000 00</p>
+                            </div>
+                            <button class="ml-auto p-2 hover:bg-white/10 rounded-lg" onclick="navigator.clipboard.writeText('DE12345678900000000000')">
+                                📋
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold">BIC</div>
+                            <div>
+                                <p class="text-xs uppercase opacity-50">Sparkasse Esslingen</p>
+                                <p class="text-lg font-mono">ESSL DE 66 XXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-text p-8 md:p-12 rounded-3xl shadow-2xl">
+                    <h3 class="text-3xl font-forum mb-6 text-center">Spenden-Formular</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Spendenbetrag (€)</label>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <button type="button" class="border-2 border-gray-100 py-3 rounded-xl hover:border-primary hover:text-primary transition-all font-semibold">50 €</button>
+                                <button type="button" class="border-2 border-primary bg-primary/5 py-3 rounded-xl text-primary transition-all font-semibold">100 €</button>
+                                <button type="button" class="border-2 border-gray-100 py-3 rounded-xl hover:border-primary hover:text-primary transition-all font-semibold">500 €</button>
+                            </div>
+                            <input type="number" placeholder="Anderer Betrag" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1 text-gray-600">Name (Optional)</label>
+                            <input type="text" placeholder="Max Mustermann" class="w-full border border-gray-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                        </div>
+                        <div class="flex items-center gap-2 py-4">
+                            <input type="checkbox" id="anon" class="w-4 h-4 text-primary">
+                            <label for="anon" class="text-sm text-gray-500">Ich möchte anonym spenden</label>
+                        </div>
+                        <button class="w-full bg-primary text-white py-5 rounded-xl font-bold text-xl hover:bg-green-700 transition-all shadow-lg">
+                            Mit PayPal / Kreditkarte spenden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media / Instagram Section -->
+    <section id="instagram" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold tracking-widest uppercase text-sm">Aktuelles aus der Gemeinde</span>
+                <h2 class="text-4xl md:text-5xl font-forum mt-2 mb-4">Folgen Sie uns auf Instagram</h2>
+                <p class="text-gray-500">Bleiben Sie über den Baufortschritt und Veranstaltungen informiert: <a href="#" class="text-primary font-semibold hover:underline">@fatihmoscheeesslingen</a></p>
+            </div>
+
+            <!-- Instagram Grid Mockup -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Post 1 -->
+                <div class="relative aspect-square overflow-hidden rounded-2xl instagram-item cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&q=80&w=600" alt="Instagram Post" class="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 flex items-center justify-center instagram-overlay text-white">
+                        <div class="text-center">
+                            <p class="font-bold">❤️ 124</p>
+                            <p class="text-xs uppercase tracking-widest mt-1">Ansehen</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="relative aspect-square overflow-hidden rounded-2xl instagram-item cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&q=80&w=600" alt="Instagram Post" class="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 flex items-center justify-center instagram-overlay text-white">
+                        <div class="text-center">
+                            <p class="font-bold">❤️ 89</p>
+                            <p class="text-xs uppercase tracking-widest mt-1">Ansehen</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="relative aspect-square overflow-hidden rounded-2xl instagram-item cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?auto=format&fit=crop&q=80&w=600" alt="Instagram Post" class="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 flex items-center justify-center instagram-overlay text-white">
+                        <div class="text-center">
+                            <p class="font-bold">❤️ 215</p>
+                            <p class="text-xs uppercase tracking-widest mt-1">Ansehen</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 4 -->
+                <div class="relative aspect-square overflow-hidden rounded-2xl instagram-item cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1519817650390-64a934505f1f?auto=format&fit=crop&q=80&w=600" alt="Instagram Post" class="object-cover w-full h-full transform transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 flex items-center justify-center instagram-overlay text-white">
+                        <div class="text-center">
+                            <p class="font-bold">❤️ 156</p>
+                            <p class="text-xs uppercase tracking-widest mt-1">Ansehen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">
+                    <span>Mehr auf Instagram entdecken</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="h-12 w-auto mb-6">
+                        <svg viewBox="0 0 200 60" class="h-full w-auto">
+                            <path d="M20 10 C 5 10, 5 50, 20 50 L 50 50 C 65 50, 65 10, 50 10 Z" fill="#0E8D39" opacity="0.2"/>
+                            <text x="65" y="32" font-family="Forum" font-size="20" fill="#222222">Fatih Moschee</text>
+                            <text x="65" y="48" font-family="Inter" font-size="10" fill="#666">Islamische Gemeinschaft Esslingen</text>
+                        </svg>
+                    </div>
+                    <p class="text-gray-500 max-w-sm mb-6 leading-relaxed">
+                        Seit 1978 ein verlässlicher Ort für Gebet, Bildung und Dialog in Esslingen am Neckar. Tragen wir gemeinsam die Zukunft.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-widest text-sm">Kontakt</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Fritz-Müller-Straße 1</li>
+                        <li>73730 Esslingen</li>
+                        <li>moschee@ig-es.de</li>
+                        <li>0711 3005146</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 uppercase tracking-widest text-sm">Social Media</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">FB</a>
+                        <a href="#" class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2026 Fatih Moschee Esslingen - Islamische Gemeinschaft Esslingen e.V. Alle Rechte vorbehalten.</p>
+                <div class="flex justify-center gap-6 mt-4">
+                    <a href="#" class="hover:text-primary">Impressum</a>
+                    <a href="#" class="hover:text-primary">Datenschutz</a>
+                    <a href="#" class="hover:text-primary">Cookie-Richtlinie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

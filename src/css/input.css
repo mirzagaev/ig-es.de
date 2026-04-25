@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-forum: "Forum", serif;
+    --font-inter: "Inter", sans-serif; 
+    --color-primary: #0E8D39;
+    --color-accent: #0E8D39;
+    --color-text: #222222;
+    --color-secondary: #222222;
+    --color-light: #F9F8F3;
+}
+
+body {
+    @apply font-inter text-text scroll-smooth;
+}
+h1, h2, h3, .font-forum {
+    @apply font-forum;
+}
+.hero-gradient {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+.pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.021l-15.39 11.18 5.878 18.09L30 36.18l-15.387 11.18 5.878-18.09-15.39-11.18h19.021L30 0z' fill='%230E8D39' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+.instagram-overlay {
+    background: rgba(14, 141, 57, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.instagram-item:hover .instagram-overlay {
+    opacity: 1;
+}
